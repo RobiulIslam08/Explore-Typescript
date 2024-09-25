@@ -22,5 +22,9 @@ const isEven = (num: number | string) => {
   }
 };
 
-console.log(isEven(32));
-console.log(isEven('32'));
+// console.log(isEven(32));
+// console.log(isEven('32'));
+
+type Tstudent = {name:string, id:number}
+let student:Tstudent = {name:'robi', id:434}
+console.log(student)

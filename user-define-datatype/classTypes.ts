@@ -24,7 +24,25 @@ class User {
 	  console.log(`My name is ${this.name} and age is ${this.age}`);
 	}
   }
-  
-  const User1 = new User('robi', 24);
-  User1.getDetails(); // Output: My name is robi and age is 24
+//   for class
+//   const User1 = new User('robi', 24);
+//   User1.getDetails(); // Output: My name is robi and age is 24
+
+
+// for inheritecns
+class Student extends User{
+	studentId:number;
+	constructor(name: string, age: number, studentId:number) {
+	  super(name, age)
+	  this.studentId = studentId
+	}
+	getStudentDetails():void {
+		console.log(`My name is ${this.name} and age is ${this.age} and id ${this.studentId}`)
+	}
+}
+let student1 = new Student('rahad', 8, 434)
+student1.getStudentDetails()
+student1.getDetails()
+
+
   

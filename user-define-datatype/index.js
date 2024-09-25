@@ -18,5 +18,5 @@ var isEven = function (num) {
         return Number(num) % 2 === 0 ? 'even' : 'odd';
     }
 };
-console.log(isEven(32));
-console.log(isEven('32'));
+var student = { name: 'robi', id: 434 };
+console.log(student);
